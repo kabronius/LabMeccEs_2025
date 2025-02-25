@@ -1,5 +1,5 @@
 # Esercitazione 1 - Istallazione del'Ambiente Sviluppo: Ubuntu e VSCode
-Questa guida descrive il processo di istalazione di la distribuzione di `Ubuntu 24.04 LTS`, un sistema operativo basato su Linux, e di `Visual Studio Code`, un editor di codice ampiamente utilizzato nello sviluppo software.
+Questa guida descrive il processo di istallazione di la distribuzione di `Ubuntu 24.04 LTS`, un sistema operativo basato su Linux, e di `Visual Studio Code`, un editor di codice ampiamente utilizzato nello sviluppo software.
 
 L'obbietivo di questa istallazione è configurare un ambiente adatto allo sviluppo di codice in `ROS2`. `Ubuntu` è il sistema operativo raccomandato per `ROS2` grazie alla sua compatibilità e supporto ufficiale, mentre `VSCode` offre un ambiente di sviluppo flessibile e potente per la scrittura e il debbuging.  
 
@@ -9,13 +9,17 @@ In questa sezione verrà illustrato il processo passo a passo per:
 3) Istallare e preparare `VSCode` con estenzioni utili per lavorare con `ROS2` (Python, C++, CMake, etc.).
 
 ## Istalazione di Ubuntu 24.04 LTS
+
+> [!TIP] ***Prima di cominciare***\
+> Se si ha un'installazione di Windows su un singolo disco rigido e non c'è intenzione di sostituirlo, si consiglia di creare una nuova partizione utilizzando `Gestione disco` di Windows.  
+
 ### 1)  Scaricare un'immagine di Ubuntu 
-Scaricare l'ISO di Ubuntu corrispondente all'architettura del portatile o PC da [questo link](https://ubuntu.com/download/desktop).
+Scaricare l'`ISO` di `Ubuntu` corrispondente all'architettura del `portatile` o `PC` da [questo link](https://ubuntu.com/download/desktop).
 
 ![Pagina di download](images/bb8147f0d63925b1b415c34c6afe154e68520940_2_800x415.png)
 
 ### 2) Creare una chiavetta USB 
-Per installare Ubuntu Desktop, bisogna scrivere l'ISO scaricato su una chiavetta USB per creare il supporto di installazione. 
+Per installare `Ubuntu Desktop`, bisogna scrivere l'`ISO` scaricato su una chiavetta USB per creare il supporto di installazione. 
 
 Questo tutorial usa [balenaEtcher](https://etcher.balena.io/) perché funziona su Linux, Windows e macOS. Scegliere la versione che corrisponde al attuale sistema operativo, scaricare e installare lo strumento.
 
@@ -156,9 +160,14 @@ Quando si installa il pacchetto .deb, viene richiesto di installare il repositor
 VS Code ha un ricco ecosistema di estensioni che consentono di aggiungere linguaggi, debugger e strumenti alla installazione per supportare il flusso di lavoro di sviluppo specifico. Ci sono migliaia di estensioni disponibili nel Visual Studio Marketplace.
 
 ####  Installare un'estensione di linguaggio per aggiungere supporto per Python o qualsiasi altro linguaggio di programmazione d'interesse.
-1) 
+
+1) Selezionare la vista `Estensioni` nella barra delle attività.
+
 ![Vista Estensioni](images/extensions-view.png)
 
-2)
+2) Inserire `Python` nella casella di ricerca della vista `Estensione` per cercare estensioni correlate a Python. Selezionare l'estensione `Python` pubblicata da Microsoft, quindi selezionare il pulsante **`Installa`**.
+
 ![Python](images/extensions-search-python.png)
+
+Per il resto di estensioni la procedura rimane la stessa. 
 
