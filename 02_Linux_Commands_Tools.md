@@ -61,7 +61,7 @@ Per rimuovere un pacchetto scrivere nel terminale:
 ```
 sudo apt remove <nome del pacchetto>
 ```
-> ![TIP]\
+> [!TIP]\
 > Con la flag `--purge` dopo il comando `remove` vengono eliminati anche i file di configurazione del pacchetto.
 
 ## Gedit
@@ -175,7 +175,7 @@ Nella barra di ricerca, digitare Terminator. I risultati della ricerca verranno 
 
 ### Panoramica delle scorciatoie di Terminator
 
-> ![NOTE]\
+> [!NOTE]\
 > Le scorciatoie base del terminale di Linux funzionano anche in Terminator.
 
 |Azione|Combinazione|
@@ -216,7 +216,7 @@ Per asicurarsi che `SSH` parte automaticamente dopo il riavvio bisogna abilitarl
 sudo systemctl enable ssh
 ```
 
-> ![TIP]\
+> [!TIP]\
 > Per comprobare lo stato di un servizio usare:
 > ```
 > systemctl status <nome_del_servizio.service>
@@ -236,7 +236,7 @@ Con `SSH` abilitato sarà possibile la conessione con e da un altro PC usando la
 ```
 ssh nome_utente@nome_host_o_IP
 ``` 
-> ![TIP]\
+> [!TIP]\
 > Agguingendo il flag `-X` permette esguire applicazione grafiche in remoto.
 
 
@@ -272,7 +272,7 @@ Un output del tipo:
  sudo apt install git
  ```
 
- > ![TIP]\
+ > [!TIP]\
  > Ricordare sempre di aggiornare il sistema prima d'installare i pacchetti.
 
  #### Configurare git
@@ -282,7 +282,7 @@ Un output del tipo:
  git config --global user.email "nome@email.com"
  ```
 
- > ![NOTE]\
+ > [!NOTE]\
  > Il flag `--global` influisce su tutti i repository con cui si lavora nel sistema.
 
  ### GitHub 
@@ -300,7 +300,7 @@ Il lavoro collaborativo, una delle funzionalità fondamentali di GitHub, è reso
 
 #### Creare un repositorio in GitHub
 
-> ![NOTE]\
+> [!NOTE]\
 > Si deve avere un'account GitHub. Per maggiori informazioni, consultare  questo [link](https://docs.github.com/en/get-started/start-your-journey/creating-an-account-on-github).
 
 1) Nell'angolo in alto a destra di qualsiasi pagina, selezionare `+` , quindi fare clic su `Nuovo repository`.
