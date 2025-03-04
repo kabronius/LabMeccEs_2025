@@ -223,7 +223,7 @@ sudo systemctl enable ssh
 > ```
 > oppure usare il servizio di loggin del kernel `journal` con: 
 > ```
-> journactl -u <nome_del_servizio.service>
+> journalctl -u <nome_del_servizio.service>
 >```
 
 Se il servizio non è ancora iniziato, farlo partire con il commando:
