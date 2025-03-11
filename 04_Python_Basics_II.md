@@ -38,8 +38,7 @@ Altro metodo utile, appartenente alla libreria standard di Python è il metodo `
 > [!WARNING]\
 > La caratteristica di dinamicità di strutture come le liste può sembrare una notevole comodità qualora il numero di elementi da conservare non sia fisso o non sia noto a priori, tuttavia tale caratteristica nasconde anche alcune criticità. Qualora si stia effettuando un ciclo iterativo **è fortemente sconsigliato** effettuare  `operazioni contestuali di modifica` alla lista  onde evitare di incorrere in problematiche dovute alla modifica concorrente della struttura. In altre parole, può portare a problematiche di inconsistenza degli indici nel caso in cui le operazioni di modifica siano fatte contestualmente all'iterazione, tali problematiche possono scaturire `IndexError` per lo sforamento degli indici e causare l'interruzione del programma o, peggio ancora generare un'infida incosistenza dei dati.  
 > 
-> [!NOTE]\
-> È possibile analizzare nel dettaglio ciò che succede in memoria alla lista durante le iterazioni quando avvengono modifiche concorrenti.
+> >È possibile analizzare nel dettaglio ciò che succede in memoria alla lista durante le iterazioni quando avvengono modifiche concorrenti.
 > ```python
 > l = [1,2,3,3,6]
 > try:
@@ -538,7 +537,6 @@ La visualizzazione dei dati può essere effettuata senza troppo sforzo da parte 
 >     return round(s/N,2)
 > ```
 >
-> > [!NOTE]
 > > In realtà, grazie alle funzioni messe a disposizione dalla libreria standard di Python, si potrebbe scrivere l'intera funzione in una sola riga di codice: `return round(sum(x)/len(x),2)`.
 >
 > Una generalizzazione del filtro precedente porta alla definizione del **filtro a media mobile pesata**. Tale tecnica prevede di effettuare una combinazione convessa dei valori presenti nel buffer dando pesi diversi in funzione della posizione temporale degli elementi (in genere, una scelta logica, prevede di assegnare un peso maggiore a misure più recenti). Matematicamente, il filtro a media pesata può essere definito nel seguente modo:
