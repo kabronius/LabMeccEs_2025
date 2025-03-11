@@ -52,7 +52,7 @@ Altro metodo utile, appartenente alla libreria standard di Python è il metodo `
 > print(l)
 > # [1,2,3,6]
 > ```
-> | Iteration   | Element   | List in memory |
+> | Iterazione   | Elemento   | Lista in memoria |
 > | ---------   | -------   | -------------- |
 > |  i = 0      | l[0] = 1  | l=[1,2,3,3,6]  |
 > |  i = 1      | l[1] = 2  | l=[1,2,3,3,6]  |
@@ -520,8 +520,7 @@ La visualizzazione dei dati può essere effettuata senza troppo sforzo da parte 
 > <p align="center"><img width=30% src="images/Figure_5.png"></p>
 
 
-> [!TIP]\
-> ## Filtraggio Digitale
+> ## [!TIP] Filtraggio Digitale
 > Si supponga di voler realizzare una libreria che metta a disposizione delle funzioni di utilità che permettano di filtrare digitalmente un segnale di misura che potrebbe essere acquisito ad esempio da un sensore. Ovviamente, quando si parla di sistemi meccatronici bisogna pensare che le tecniche che si vogliono realizzare devono agire in tempo reale, non in post processamento; inoltre non si vuole fare ricorso a software di terze parti che permettano di eseguire le operazioni attraverso comode interfacce grafiche, è necessario che le operazioni iano gestite in modo automatizzato e che i risultati siano così fruibili dalle altre componenti del sistema.  
 > Tra le tecniche di filtraggio più comuni vi è l'uso di filtri con _risposta all'impulso finita_ (FIR). Lungi dal voler entrare nel dettaglio della teoria del filtraggio, una delle tecniche più semplici per la riduzione di un rumore di misura prevede di utilizzare un **filtro digitale a media mobile**. Formalmente tale filtro può essere espresso nel seguente modo:  
 > <center> <a href="https://www.codecogs.com/eqnedit.php?latex=y(t)=\frac{1}{N}\sum_{k=0}^{N-1}x(t-k)" target="_blank"><img src="https://latex.codecogs.com/gif.latex?y(t)=\frac{1}{N}\sum_{k=0}^{N-1}x(t-k)" title="y(t)=\frac{1}{N}\sum_{k=0}^{N-1}x(t-k))" /></a> </center>
@@ -535,7 +534,7 @@ La visualizzazione dei dati può essere effettuata senza troppo sforzo da parte 
 >         s += x[k]
 >     return round(s/N,2)
 > ```
-> [!NOTE] In realtà, grazie alle funzioni messe a disposizione dalla libreria standard di Python, si potrebbe scrivere l'intera funzione in una sola riga di codice: `return round(sum(x)/len(x),2)`.
+> >[!NOTE] In realtà, grazie alle funzioni messe a disposizione dalla libreria standard di Python, si potrebbe scrivere l'intera funzione in una sola riga di codice: `return round(sum(x)/len(x),2)`.
 >
 > Una generalizzazione del filtro precedente porta alla definizione del **filtro a media mobile pesata**. Tale tecnica prevede di effettuare una combinazione convessa dei valori presenti nel buffer dando pesi diversi in funzione della posizione temporale degli elementi (in genere, una scelta logica, prevede di assegnare un peso maggiore a misure più recenti). Matematicamente, il filtro a media pesata può essere definito nel seguente modo:
 > <center> <a href="https://www.codecogs.com/eqnedit.php?latex=y(t)=\sum_{k=0}^{N-1}w_k\cdot&space;x(t-k)&space;\qquad&space;\sum_{k=0}^{N-1}w_k=1&space;\quad&space;w_k\geq&space;0" target="_blank"><img src="https://latex.codecogs.com/gif.latex?y(t)=\sum_{k=0}^{N-1}w_k\cdot&space;x(t-k)&space;\qquad&space;\sum_{k=0}^{N-1}w_k=1&space;\quad&space;w_k\geq&space;0" title="y(t)=\sum_{k=0}^{N-1}w_k\cdot x(t-k) \qquad \sum_{k=0}^{N-1}w_k=1 \quad w_k\geq 0" /></a> </center>
