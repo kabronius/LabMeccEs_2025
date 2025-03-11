@@ -538,7 +538,8 @@ La visualizzazione dei dati può essere effettuata senza troppo sforzo da parte 
 >     return round(s/N,2)
 > ```
 >
-> > [!NOTE] In realtà, grazie alle funzioni messe a disposizione dalla libreria standard di Python, si potrebbe scrivere l'intera funzione in una sola riga di codice: `return round(sum(x)/len(x),2)`.
+> > [!NOTE]
+> > In realtà, grazie alle funzioni messe a disposizione dalla libreria standard di Python, si potrebbe scrivere l'intera funzione in una sola riga di codice: `return round(sum(x)/len(x),2)`.
 >
 > Una generalizzazione del filtro precedente porta alla definizione del **filtro a media mobile pesata**. Tale tecnica prevede di effettuare una combinazione convessa dei valori presenti nel buffer dando pesi diversi in funzione della posizione temporale degli elementi (in genere, una scelta logica, prevede di assegnare un peso maggiore a misure più recenti). Matematicamente, il filtro a media pesata può essere definito nel seguente modo:
 > <center> <a href="https://www.codecogs.com/eqnedit.php?latex=y(t)=\sum_{k=0}^{N-1}w_k\cdot&space;x(t-k)&space;\qquad&space;\sum_{k=0}^{N-1}w_k=1&space;\quad&space;w_k\geq&space;0" target="_blank"><img src="https://latex.codecogs.com/gif.latex?y(t)=\sum_{k=0}^{N-1}w_k\cdot&space;x(t-k)&space;\qquad&space;\sum_{k=0}^{N-1}w_k=1&space;\quad&space;w_k\geq&space;0" title="y(t)=\sum_{k=0}^{N-1}w_k\cdot x(t-k) \qquad \sum_{k=0}^{N-1}w_k=1 \quad w_k\geq 0" /></a> </center>
