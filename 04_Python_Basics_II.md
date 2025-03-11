@@ -521,6 +521,7 @@ La visualizzazione dei dati può essere effettuata senza troppo sforzo da parte 
 
 
 > ## [!TIP] Filtraggio Digitale
+>
 > Si supponga di voler realizzare una libreria che metta a disposizione delle funzioni di utilità che permettano di filtrare digitalmente un segnale di misura che potrebbe essere acquisito ad esempio da un sensore. Ovviamente, quando si parla di sistemi meccatronici bisogna pensare che le tecniche che si vogliono realizzare devono agire in tempo reale, non in post processamento; inoltre non si vuole fare ricorso a software di terze parti che permettano di eseguire le operazioni attraverso comode interfacce grafiche, è necessario che le operazioni iano gestite in modo automatizzato e che i risultati siano così fruibili dalle altre componenti del sistema.  
 > Tra le tecniche di filtraggio più comuni vi è l'uso di filtri con _risposta all'impulso finita_ (FIR). Lungi dal voler entrare nel dettaglio della teoria del filtraggio, una delle tecniche più semplici per la riduzione di un rumore di misura prevede di utilizzare un **filtro digitale a media mobile**. Formalmente tale filtro può essere espresso nel seguente modo:  
 > <center> <a href="https://www.codecogs.com/eqnedit.php?latex=y(t)=\frac{1}{N}\sum_{k=0}^{N-1}x(t-k)" target="_blank"><img src="https://latex.codecogs.com/gif.latex?y(t)=\frac{1}{N}\sum_{k=0}^{N-1}x(t-k)" title="y(t)=\frac{1}{N}\sum_{k=0}^{N-1}x(t-k))" /></a> </center>
