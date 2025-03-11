@@ -269,6 +269,7 @@ Tra i moduli presenti nel repository pypi vi sono:
 - `Flask`: è un _micro-framework_ molto leggero per lo sviluppo di web application.
 - `Psycopg2`: framework per la gestione di database _PostgreSQL_.
 - `Opencv-Python`: versione non ufficiale, precompilata, della libreria di elaborazione grafica _OpenCV_. 
+- `StateMachine`: Fornisce un'API _pythonica_ ed espressiva per implementare macchine a stati in basi di codice Python sincronizzate o asincrone. Per maggiore info, consultare la [documentazione](https://python-statemachine.readthedocs.io/en/latest/).
 
 Oltre alle librerie ufficiali messe a disposizone, sono presenti una miriade di moduli creati dagli utenti e messi a disposizione in versione open-source sulla piattaforma [GitHub](https://github.com/) o attraverso altri canali di condivisione. È inoltre possibile definire anche dei propri moduli contenenti funzioni d'utilità personalizzate da importare al momento in cui se ne ha la necessità.
 
