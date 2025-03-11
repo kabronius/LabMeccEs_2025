@@ -252,13 +252,41 @@ La lista delle librerie standard di Python può essere consultata al seguente [l
 - `time`: funzioni di utilità (`sleep`,`localtime`) e conversione dei dati temporali (`strftime`,`mktime`).
 - `socket`: libreria per la gestione delle connessioni di rete (TCP, UDP).
 
-Oltre ai moduli della libreria standard, sono disponibili una grande varietà di moduli esterni sviluppati da terze parti, raccolti all'interno del repository ufficiale di pacchetti Python: [pypi](https://pypi.org/). I moduli presenti in tale libreria possono essere scaricati, installati e gestiti dall'apposito gestore di pachetti `pip`. Il gestore di pacchetti può essere installato direttamente da terminale attraverso il comando
+Oltre ai moduli della libreria standard, sono disponibili una grande varietà di moduli esterni sviluppati da terze parti, raccolti all'interno del repository ufficiale di pacchetti Python: [pypi](https://pypi.org/). I moduli presenti in tale libreria possono essere scaricati, installati e gestiti dall'apposito gestore di pachetti `pip`. Il gestore di pacchetti può essere installato direttamente da terminale attraverso il comando:
 ```bash
-$ sudo apt install python3-pip
+$ sudo apt install python3-venv python3-pip
 ```
+> [!WARNING]    
+> Le recenti versioni di Debian/Ubuntu hanno modificato pip per utilizzare di default lo [User Scheme](https://pip.pypa.io/en/stable/user_guide/#user-installs), il che rappresenta un cambiamento di comportamento significativo che potrebbe sorprendere alcuni utenti. 
+
+> [!NOTE]   
+> Per installare pachetti Python in tutto il sistema, provare ad instalare il pachetto confezionato da Debian con:
+> ```bash
+> $ sudo apt install python3-PACKAGE_NAME
+> ```   
+> Se si desidera installare un pachetto non confezionato da Debian (nella maggior parte dei casi), bisogna creare un ambiente virtuale con:
+> ```bash
+> $ python3 -m venv ROUTE/TO/VENV
+> ```
+> Quindi esportare la variabile ambiente `PYTHONUSERBASE`con il percorso del entorno virtuale:
+> ```bash
+> $ export PYTHONUSERBASE=ROUTE/TO/VENV
+> ```
+> Assicurarsi di avere istallato `python3-full` 
+> 
+> Il metodo più semplice per installare un'applicazione di Python non confezionata da Debian è usare [pipx](https://pipx.pypa.io/stable/installation/). Per fare ciò bisogna eseguire nel terminale:
+> ```bash
+> sudo apt install pipx
+> pip ensurepath
+> ```
+> Per installare con pipx basta scrivere:
+> ```bash
+> pipx install PACKAGE_NAME
+> ```
+> Il cui gestisce il ambiente virtuale.
+
 Tale strumento aiuta nella gestione dei pacchetti esterni distribuiti attraverso il repository ufficiale, permettendo di effettuare operazioni di ricerca, installazione delle dipendenze, rimozione di paccheti, ecc. I comandi possono essere eseguiti direttamente da terminale:
-- `$ python3 -m pip search PACKAGE_NAME`: ricerca il modulo specificato in pypi.
-- `$ python3 -m pip install PACKAGE_NAME`: installa il modulo da pypi.
+
 - `$ python3 -m pip check`: verifica che tutte le dipendenze dei moduli siano soddisfatte.
 - `$ python3 -m pip uninstall PACKAGE_NAME`: rimuove un modulo precedentemente installato.
 - `$ python3 -m pip list`: mostra la lista di tutti i pacchetti installati da pypi.
