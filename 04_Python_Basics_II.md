@@ -520,7 +520,8 @@ La visualizzazione dei dati può essere effettuata senza troppo sforzo da parte 
 > <p align="center"><img width=30% src="images/Figure_5.png"></p>
 
 
-> [!TIP]\
+> [!TIP]
+>
 > ## Filtraggio Digitale
 >
 > Si supponga di voler realizzare una libreria che metta a disposizione delle funzioni di utilità che permettano di filtrare digitalmente un segnale di misura che potrebbe essere acquisito ad esempio da un sensore. Ovviamente, quando si parla di sistemi meccatronici bisogna pensare che le tecniche che si vogliono realizzare devono agire in tempo reale, non in post processamento; inoltre non si vuole fare ricorso a software di terze parti che permettano di eseguire le operazioni attraverso comode interfacce grafiche, è necessario che le operazioni iano gestite in modo automatizzato e che i risultati siano così fruibili dalle altre componenti del sistema.  
