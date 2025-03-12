@@ -1,4 +1,4 @@
-# Esercitazione 3 - Python 3: Panoramica 
+# Esercitazione 3 - Python 3 Basico: Parte I
 
 ## Introduzione 
 

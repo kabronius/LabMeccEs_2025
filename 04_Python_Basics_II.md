@@ -1,4 +1,4 @@
-# Eserciazione 4 - Python 3 Basico: Continuazione
+# Eserciazione 4 - Python 3 Basico: Parte II
 
 ## Sintassi - Strutture Dati
 
@@ -277,7 +277,7 @@ $ sudo apt install python3-venv python3-pip
 > Il metodo più semplice per installare un'applicazione di Python non confezionata da Debian è usare [pipx](https://pipx.pypa.io/stable/installation/). Per fare ciò bisogna eseguire nel terminale:
 > ```bash
 > sudo apt install pipx
-> pip ensurepath
+> pipx ensurepath
 > ```
 > Per installare con pipx basta scrivere:
 > ```bash
