@@ -83,8 +83,8 @@ Altri metodi speciali sono quelli che vengono invocati quando si utilizzano gli 
 | `*` | `__mul__` `__rmul__` `__imul__`| Definisce l'operazione di prodotto tra oggetti. |
 | `/` | `__truediv__` `__rtruediv__` `__itruediv__`| Definisce l'operazione di divisione tra oggetti. |   
 
-> ![NOTE]   
-> Considerate che abbiamo due oggetti che sono una rappresentazione fisica di una classe (tipo di dati definito dall'utente) e dobbiamo aggiungere due oggetti con l'operatore binario '+', che genera un errore, perché il compilatore non sa come aggiungere due oggetti. Quindi definiamo un metodo per un operatore e quel processo è chiamato **overloading dell'operatore**. Possiamo sovraccaricare tutti gli operatori esistenti ma non possiamo creare un nuovo operatore.
+> [!NOTE]
+> Considerare che si hannoo due oggetti che sono una rappresentazione fisica di una classe (tipo di dati definito dall'utente) e dobbiamo aggiungere due oggetti con l'operatore binario '+', che genera un errore, perché il compilatore non sa come aggiungere due oggetti. Quindi definiamo un metodo per un operatore e quel processo è chiamato **overloading dell'operatore**. Possiamo sovraccaricare tutti gli operatori esistenti ma non possiamo creare un nuovo operatore.
 
 > [!NOTE]   
 > In questo esempio si riassume tutto quanto detto sopra:   
