@@ -16,6 +16,10 @@
 ### Documentazione per-pacchetti
 * [Repositorio Jazzy](https://docs.ros.org/en/jazzy/p/)
 
+### Pacchetti per i Sensori (GitHub)
+* [Vectornav IMU]( https://github.com/dawonn/vectornav/tree/ros2)
+* [Velodyne LiDAR]( https://github.com/ros-drivers/velodyne)
+---
 ## Altri link
 
 * [Murilo's ROS2 Tutorial](https://ros2-tutorial.readthedocs.io/en/latest/index.html)
