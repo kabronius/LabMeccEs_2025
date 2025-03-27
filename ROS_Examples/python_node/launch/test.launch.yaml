@@ -1,0 +1,19 @@
+launch:
+
+- arg:
+    name: message
+    default: "This is"
+
+- node:
+      pkg: python_node
+      exec: python_publisher
+      param:  
+        - from: $(find-pkg-share python_node)/config/python_node.config.yaml
+        - name: message
+          value: $(var message)
+
+- node:
+      pkg: python_node
+      exec: python_subscriber
+      param:
+        - from: $(find-pkg-share python_node)/config/python_node.config.yaml

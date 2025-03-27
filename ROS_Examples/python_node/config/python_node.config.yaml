@@ -1,0 +1,12 @@
+
+python_publisher:
+  ros__parameters:
+    topic_name: message
+    timer_period: 1.0
+    # message: This is
+
+python_subscriber:
+  ros__parameters:
+    topic_name: message
+    message: a concatenated message 
+

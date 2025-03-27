@@ -10,7 +10,12 @@
 * [Creazione di pacchetti](https://docs.ros.org/en/jazzy/How-To-Guides/Developing-a-ROS-2-Package.html)
 * [Introspezione con la riga di commandi](https://docs.ros.org/en/jazzy/Concepts/Basic/About-Command-Line-Tools.html)
 * [Scrittura di semplici nodi publisher e subscriber](https://docs.ros.org/en/jazzy/Tutorials/Beginner-Client-Libraries/Writing-A-Simple-Py-Publisher-And-Subscriber.html)
+* [Comprensione dei parametri](https://docs.ros.org/en/jazzy/Tutorials/Beginner-CLI-Tools/Understanding-ROS2-Parameters/Understanding-ROS2-Parameters.html#load-parameter-file-on-node-startup)
 * [Scrivere un semplice servizio e client](https://docs.ros.org/en/jazzy/Tutorials/Beginner-Client-Libraries/Writing-A-Simple-Py-Service-And-Client.html)
+* [Creare interfaccie customizzate (.msg e .srv)](https://docs.ros.org/en/jazzy/Tutorials/Beginner-Client-Libraries/Custom-ROS2-Interfaces.html)
+* [Gestione delle dipendenze con rosdep](https://docs.ros.org/en/jazzy/Tutorials/Intermediate/Rosdep.html)
+* [File launch](https://docs.ros.org/en/jazzy/How-To-Guides/Launch-file-different-formats.html)
+* [Integrazione dei file launch nei pacchetti ROS 2](https://docs.ros.org/en/jazzy/Tutorials/Intermediate/Launch/Launch-system.html)
 
 ### ROS Index (Indice di pacchetti di ROS)
 * [ROS Index](https://index.ros.org/)
