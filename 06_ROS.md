@@ -26,6 +26,7 @@
 ### Pacchetti per i Sensori (GitHub)
 * [Vectornav IMU]( https://github.com/dawonn/vectornav/tree/ros2)
 * [Velodyne LiDAR]( https://github.com/ros-drivers/velodyne)
+* [ZED 2i](https://www.stereolabs.com/docs/ros2)
 ---
 ## Altri link
 
