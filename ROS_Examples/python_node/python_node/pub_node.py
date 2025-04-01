@@ -3,6 +3,7 @@ from rclpy.node import Node
 
 from std_msgs.msg import String, Bool
 from geometry_msgs.msg import Pose
+from custom_interface.srv import CustomSrv
 
 class PythonPublisher(Node):
 
@@ -13,23 +14,43 @@ class PythonPublisher(Node):
         self.declare_parameter("timer_period",0.5)
         self.declare_parameter("message", "This is a message")
 
-        name_of_topic = self.get_parameter("topic_name").get_parameter_value().string_value
-        period = self.get_parameter("timer_period").get_parameter_value().double_value 
+        self.name_of_topic = self.get_parameter("topic_name").get_parameter_value().string_value
+        self.period = self.get_parameter("timer_period").get_parameter_value().double_value 
         self.message = self.get_parameter("message").get_parameter_value().string_value
 
-        self.publisher_ = self.create_publisher(String, name_of_topic, 10)
-        #timer_period = 0.5  # seconds
-        self.timer = self.create_timer(period, self.timer_callback)
-        self.i = 0
+        self.srv = self.create_service(CustomSrv, "pub_start", self.srv_callback)
+        self.start_flag = False
+
+    def srv_callback(self, request: CustomSrv.Request, response: CustomSrv.Response): 
+        if request.start==True:
+            if self.start_flag==False:
+                self.publisher = self.create_publisher(String, self.name_of_topic, 10)
+                self.timer = self.create_timer(self.period, self.timer_callback)
+                self.start_flag = True
+                response.success = True
+                response.message = "Publisher started" 
+            else:
+                self.start_flag = False
+                response.success = False
+                response.message = "Publisher already started"
+        elif request.start==False:
+            if self.start_flag:
+                self.destroy_publisher(self.publisher)
+                self.destroy_timer(self.timer)
+                self.start_flag = False
+                response.success = True
+                response.message = "Publisher stopped"
+            else:
+                self.start_flag = False
+                response.success = False
+                response.message = "Publisher already stopped"
+        # Si deve ritornare sempre la risposta del service server, per questo motivo scattava l'eccezione di TypeError() 🥲
+        return response
 
     def timer_callback(self):
         msg = String()
-        # msg.data = 'Hello World: %d' % self.i
         msg.data = self.message
-        self.publisher_.publish(msg)
-        # self.get_logger().info('Publishing: "%s"' % msg.data)
-        self.i += 1
-
+        self.publisher.publish(msg)
 
 def main(args=None):
     rclpy.init(args=args)
