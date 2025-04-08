@@ -16,6 +16,7 @@
 * [Gestione delle dipendenze con rosdep](https://docs.ros.org/en/jazzy/Tutorials/Intermediate/Rosdep.html)
 * [File launch](https://docs.ros.org/en/jazzy/How-To-Guides/Launch-file-different-formats.html)
 * [Integrazione dei file launch nei pacchetti ROS 2](https://docs.ros.org/en/jazzy/Tutorials/Intermediate/Launch/Launch-system.html)
+* [Formato URDF](https://wiki.ros.org/urdf/XML/model)
 * [Tutoriale URDF](https://docs.ros.org/en/jazzy/Tutorials/Intermediate/URDF/URDF-Main.html)
 
 ### ROS Index (Indice di pacchetti di ROS)

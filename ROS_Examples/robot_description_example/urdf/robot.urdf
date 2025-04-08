@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<robot name="cylinder">
+    <link name="base_footprint"/>
+        
+    <link name="cylinder_link">
+        <visual name="cylinder_visual">
+            <origin xyz="0 0 0" rpy="0 0 0"/>
+            <geometry>
+                <cylinder radius="0.5" length="1.0"/>
+            </geometry>
+            <material name="blue">
+                <color rgba="0 0 1 1"/>
+            </material>
+        </visual>
+    </link>
+    <link name="right_arm">
+        <visual name="right_arm_visual">
+            <origin rpy="0.0 0.75 0" xyz="0 0.5 0.0"/>
+            <geometry>
+                <box size="0.6 0.1 0.2"/>
+            </geometry>
+        </visual>
+    </link>
+    <joint name="cylinder" type="fixed">
+        <parent link="base_footprint"/>
+        <child link="cylinder_link"/>
+    </joint>
+    <joint name="right_arm" type="fixed">
+        <parent link="cylinder_link"/>
+        <child link="right_arm"/>
+        <origin xyz="0.5 0 0" rpy="0 0 0"/>
+    </joint>
+</robot>
