@@ -9,7 +9,7 @@
 
 ### Turtlebot
 * [Pacchetti per Turtlebot3](https://emanual.robotis.com/docs/en/platform/turtlebot3/quick-start/#install-turtlebot3-packages)
-* [Simulazione Turtlebot3](https://emanual.robotis.com/docs/en/platform/turtlebot3/)
+* [Simulazione Turtlebot3](https://emanual.robotis.com/docs/en/platform/turtlebot3/overview/)
 
 ### BlueROV 2
 * [Simulazione BlueROV 2](https://github.com/CentraleNantesROV/bluerov2)
